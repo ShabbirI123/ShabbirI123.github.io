@@ -1,0 +1,111 @@
+/* 
+Project Name: My personal Website
+Author: Shabbir Islam
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+/* Body */
+
+body {margin:0;font-family:Arial}
+
+/* Navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.topnav .right {
+    float: right;
+    padding-top: 20px;
+}
+
+.topnav #rightOne {
+    margin-right: 50px;
+}
+
+.active {
+    float: left;
+}
+
+.topnav .icon {
+    padding-top: 20px;
+    display: none;
+}
+
+.topnav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: white;
+    background-color: lightcoral;
+    background-image: linear-gradient(120deg, #ef450e,#159957);
+}
+
+.header h1{
+    padding-top: 150px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        padding-top: 20px;
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
